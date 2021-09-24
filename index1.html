@@ -13,13 +13,13 @@
 
 
      <!-- Model Viwer -->
-     <link rel="stylesheet" href="../../css/responsive.css">
-     <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-     <script src="https://unpkg.com/intersection-observer/intersection-observer.js"></script>
-     <script src="https://unpkg.com/resize-observer-polyfill/dist/ResizeObserver.js"></script>
-     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-   <!-- End  -->
+      <link rel="stylesheet" href="../../css/responsive.css">
+      <script src="https://unpkg.com/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+      <script src="https://unpkg.com/intersection-observer/intersection-observer.js"></script>
+      <script src="https://unpkg.com/resize-observer-polyfill/dist/ResizeObserver.js"></script>
+      <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+      <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <!-- End  -->
     
 
     <!-- Bootstrap core CSS -->
@@ -101,26 +101,32 @@
     <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="assets/image/model_1.png" alt="" class="img-fluid">
 
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <h5 class="text-danger">$299.99</h5>
-                <div class="btn-group">
-                  <a href="assets/pages/AR/one.html">
-                    <img src="assets/image/3D.png" style="width: 48px; height: auto;" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Backpack_Blue  -->
+
         <div class="col">
           <div class="card shadow-sm">
-            <img src="assets/image/model_2.png" alt="" class="img-fluid">
+            <!-- <img src="assets/image/model_2.png" alt="" class="img-fluid"> -->
+            <div>
+              <model-viewer style="width: 100%; height: 400px;" class="a" 
+               src="assets/model/Fishermen/Backpack_Blue_Final.glb"
+               ios-src="assets/model/Fishermen/Backpack_Blue_Final.usdz"
+               id="Backpack_Blue"
+               environment-image="assets/image/cannon_1k.hdr"
+               poster="assets/image/1.webp" 
+               loading="eager"
+               ar ar-modes="webxr scene-viewer quick-look" 
+               camera-orbit="-30deg 90deg auto"
+               camera-controls
+               ar ar-placement=""
+               exposure="1.3"
+               alt="assets" 
+               quick-look-browsers="safari chrome" 
+               ar-status="not-presenting" 
+               autoplay>
+              <input slot="ar-button" class="ar-button" value="submit" type="image" src="assets/image/aricon_Black.png" width="30px" height="30px"> 
+              </model-viewer>
+            </div>
 
             <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -135,16 +141,38 @@
             </div>
           </div>
         </div>
+
+        <!-- Backpack_Gray -->
         <div class="col">
           <div class="card shadow-sm">
-            <img src="assets/image/model_3.png" alt="" class="img-fluid">
+            <!-- <img src="assets/image/model_2.png" alt="" class="img-fluid"> -->
+            <div>
+              <model-viewer style="width: 100%; height: 400px;" class="a" 
+               src="assets/model/Fishermen/Backpack_Gray_Final.glb"
+               ios-src="assets/model/Fishermen/Backpack_Gray_Final.usdz"
+               id="Backpack_Gray"
+               environment-image
+               poster="assets/image/2.webp" 
+               loading="eager"
+               ar ar-modes="webxr scene-viewer quick-look" 
+               camera-orbit="-40deg 75deg auto"
+               camera-controls
+               ar ar-placement=""
+               exposure="1"
+               alt="assets" 
+               quick-look-browsers="safari chrome" 
+               ar-status="not-presenting" 
+               autoplay>
+              <input slot="ar-button" class="ar-button" value="submit" type="image" src="assets/image/aricon_Black.png" width="30px" height="30px"> 
+              </model-viewer>
+            </div>
 
             <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <h5 class="text-danger">$199.99</h5>
+                <h5 class="text-danger">$99.99</h5>
                 <div class="btn-group">
-                  <a href="assets/pages/AR/three.html">
+                  <a href="assets/pages/AR/two.html">
                     <img src="assets/image/3D.png" style="width: 48px; height: auto;" alt="">
                   </a>
                 </div>
@@ -152,16 +180,38 @@
             </div>
           </div>
         </div>
+
+        <!-- Camp Chair  -->
         <div class="col">
           <div class="card shadow-sm">
-            <img src="assets/image/model_4.png" alt="" class="img-fluid">
+          
+            <div>
+              <model-viewer style="width: 100%; height: 400px;" class="a" 
+               src="assets/model/Fishermen/Camp_Chair_Final.glb"
+               ios-src="assets/model/Fishermen/Camp_Chair_Final.usdz"
+               id="camp_chair"
+               environment-image
+               poster="assets/image/3.webp" 
+               loading="eager"
+               ar ar-modes="webxr scene-viewer quick-look" 
+               camera-orbit="-45deg 45deg auto"
+               camera-controls
+               ar ar-placement=""
+               exposure="1"
+               alt="assets" 
+               quick-look-browsers="safari chrome" 
+               ar-status="not-presenting" 
+               autoplay>
+              <input slot="ar-button" class="ar-button" value="submit" type="image" src="assets/image/aricon_Black.png" width="30px" height="30px"> 
+              </model-viewer>
+            </div>
 
             <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <h5 class="text-danger">$199.99</h5>
+                <h5 class="text-danger">$99.99</h5>
                 <div class="btn-group">
-                  <a href="assets/pages/AR/four.html">
+                  <a href="assets/pages/AR/two.html">
                     <img src="assets/image/3D.png" style="width: 48px; height: auto;" alt="">
                   </a>
                 </div>
@@ -169,16 +219,78 @@
             </div>
           </div>
         </div>
+
+        <!-- Hiking_Boots_Final -->
         <div class="col">
           <div class="card shadow-sm">
-            <img src="assets/image/model_5.png" alt="" class="img-fluid">
+          
+            <div>
+              <model-viewer style="width: 100%; height: 400px;" class="a" 
+               src="assets/model/Fishermen/Hiking_Boots_Final.glb"
+               ios-src="assets/model/Fishermen/Hiking_Boots_Final.usdz"
+               id="Hiking_Boots"
+               environment-image
+               poster="assets/image/4.webp" 
+               loading="eager"
+               ar ar-modes="webxr scene-viewer quick-look" 
+               camera-orbit="120deg 60deg auto"
+               camera-controls
+               ar ar-placement=""
+               exposure="1"
+               alt="assets" 
+               quick-look-browsers="safari chrome" 
+               ar-status="not-presenting" 
+               autoplay>
+              <input slot="ar-button" class="ar-button" value="submit" type="image" src="assets/image/aricon_Black.png" width="30px" height="30px"> 
+              </model-viewer>
+            </div>
 
             <div class="card-body">
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <div class="d-flex justify-content-between align-items-center">
-                <h5 class="text-danger">$199.99</h5>
+                <h5 class="text-danger">$99.99</h5>
                 <div class="btn-group">
-                  <a href="assets/pages/AR/five.html">
+                  <a href="assets/pages/AR/two.html">
+                    <img src="assets/image/3D.png" style="width: 48px; height: auto;" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- kayak_Final -->
+        <div class="col">
+          <div class="card shadow-sm">
+          
+            <div>
+              <model-viewer style="width: 100%; height: 400px;" class="a" 
+               src="assets/model/Fishermen/kayak_Final.glb"
+               ios-src="assets/model/Fishermen/kayak_Final.usdz"
+               environment-image="assets/image/aircraft_workshop_01_1k.hdr"
+               id="kayak"
+               environment-image
+               poster="assets/image/6.webp" 
+               loading="eager"
+               ar ar-modes="webxr scene-viewer quick-look" 
+               camera-orbit="45deg 45deg 2m"
+               camera-controls
+               ar ar-placement=""
+               exposure="1"
+               alt="assets" 
+               quick-look-browsers="safari chrome" 
+               ar-status="not-presenting" 
+               autoplay>
+              <!-- <input slot="ar-button" class="ar-button" value="submit" type="image" src="assets/image/aricon_Black.png" width="30px" height="30px">  -->
+              </model-viewer>
+            </div>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="text-danger">$99.99</h5>
+                <div class="btn-group">
+                  <a href="assets/pages/AR/two.html">
                     <img src="assets/image/3D.png" style="width: 48px; height: auto;" alt="">
                   </a>
                 </div>
